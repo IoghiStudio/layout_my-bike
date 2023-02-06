@@ -1,7 +1,7 @@
 {
-  "name": "Miami",
+  "name": "my-bike",
   "version": "1.0.0",
-  "description": "Miami landing page",
+  "description": "my-bike landing page",
   "main": "index.js",
   "scripts": {
     "init": "mate-scripts init",
