@@ -8,21 +8,44 @@
   &__body {
     margin: 0;
     background: $c-gray;
-    color: rgb(43, 48, 48);
   }
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  padding: 28px 20px 80px;
   height: 100vh;
+
   background-image: url(../images/header__background.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: right;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 3px;
+  }
 
   &__menu-opener {
     display: inline-block;
     width: 18px;
     height: 12px;
-    // background-image: url(../images/menu.svg);
+    background-image: url(../images/menu.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 
     &:hover {
       background-image: url(../images/menu_hover.svg);
@@ -34,9 +57,26 @@
     width: 18px;
     height: 18px;
     background-image: url(../images/phone.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    color: #fff;
   }
 }
 
-// .logo {
+.logo {
+  display: inline-flex;
 
-// }
+  &__image {
+    height: 38px;
+    width: 130px;
+  }
+}
