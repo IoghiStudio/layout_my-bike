@@ -41,6 +41,10 @@
     height: 24px;
   }
 
+  &--close {
+    background-image: url(../images/close.svg);
+  }
+
   &--menu {
     // height: 12px;
     background-image: url(../images/menu.svg);
@@ -80,6 +84,12 @@
   }
 }
 
+.top-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header {
   background-image: url(../images/header__background.jpg);
   background-size: cover;
@@ -97,12 +107,6 @@
     box-sizing: border-box;
     padding: 28px 0 80px;
     height: 100vh;
-  }
-
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   &__icons {
