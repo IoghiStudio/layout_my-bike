@@ -21,7 +21,15 @@
   // &__item {}
 
   &__link {
+    display: block;
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
     text-decoration: none;
+    text-transform: uppercase;
+
     color: $c-gray;
   }
 
