@@ -10,4 +10,12 @@
     padding: $headerTopPadding 0;
     height: 100vh;
   }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
 }
