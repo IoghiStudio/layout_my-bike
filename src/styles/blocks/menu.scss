@@ -18,11 +18,15 @@
     margin: 0 0 40px;
   }
 
-  // &__item {}
+  &__item {
+    margin-bottom: 24px;
+  }
 
   &__link {
     display: block;
-    margin-bottom: 32px;
+    padding-bottom: 8px;
+    width: max-content;
+
     font-weight: 600;
     font-size: 22px;
     line-height: 22px;
@@ -31,6 +35,12 @@
     text-transform: uppercase;
 
     color: $c-gray;
+    border-bottom: 1px solid transparent;
+    transition: border-color 300ms;
+
+    &:hover {
+      border-color: $c-gray;
+    }
   }
 
   &__call {
