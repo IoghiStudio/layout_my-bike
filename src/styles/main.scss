@@ -28,17 +28,18 @@
 }
 
 .icon {
+  --icon-size: 18px;
+
   display: inline-block;
-  width: 18px;
-  height: 18px;
+  width: var(--icon-size);
+  height: var(--icon-size);
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   @include onTablet {
-    width: 24px;
-    height: 24px;
+    --icon-size: 24px;
   }
 
   &--close {
@@ -46,8 +47,12 @@
   }
 
   &--menu {
-    // height: 12px;
+    height: 12px;
     background-image: url(../images/menu.svg);
+
+    @include onTablet {
+      height: 18px;
+    }
 
     &:hover {
       background-image: url(../images/menu_hover.svg);
@@ -105,7 +110,7 @@
     justify-content: space-between;
 
     box-sizing: border-box;
-    padding: 28px 0 80px;
+    padding: $headerTopPadding 0 80px;
     height: 100vh;
   }
 
@@ -145,5 +150,15 @@
       height: 56px;
       width: 187px;
     }
+  }
+}
+
+.menu {
+  background-color: $bg-gray;
+
+  &__content {
+    box-sizing: border-box;
+    padding: $headerTopPadding 0;
+    height: 100vh;
   }
 }
