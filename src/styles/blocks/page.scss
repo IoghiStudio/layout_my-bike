@@ -5,4 +5,18 @@
     margin: 0;
     background: $c-gray;
   }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transition: transform 300ms;
+    transform: translateX(100%);
+
+    &:target {
+      transform: translateX(0);
+    }
+  }
 }
