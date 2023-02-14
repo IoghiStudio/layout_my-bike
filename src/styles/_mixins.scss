@@ -22,3 +22,9 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@mixin useGrid($columns, $gap) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
