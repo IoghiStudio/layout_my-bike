@@ -4,6 +4,7 @@
   &__body {
     margin: 0;
     background: $c-gray;
+    color: #fff;
   }
 
   &__menu {
@@ -43,8 +44,6 @@
       line-height: 100%;
       text-align: center;
       letter-spacing: -1.5px;
-
-      color: #fff;
 
       @include onTablet {
         font-size: 48px;
