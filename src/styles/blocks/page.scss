@@ -6,6 +6,10 @@
     margin: 0;
     background: $c-gray;
     color: #fff;
+
+    &--no-scroll {
+      overflow: hidden;
+    }
   }
 
   &__menu {
