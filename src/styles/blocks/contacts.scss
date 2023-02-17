@@ -23,4 +23,16 @@
     text-decoration: none;
     color: #fff;
   }
+
+  &__input {
+    margin-bottom: 16px;
+
+    &--last {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__form {
+    margin-bottom: 48px;
+  }
 }

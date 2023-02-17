@@ -1,14 +1,21 @@
 .form-field {
+  display: block;
+  width: 100%;
   box-sizing: border-box;
   height: 48px;
   padding: 14px 16px;
 
-  background: #f8f8fa;
-  border: 1px solid #292929;
+  background-color: #f8f8fa;
   border-radius: 40px;
+  color: #292929;
 
   &:hover {
-    border: 1px solid #d5d7de;
+    box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.2);
+  }
+
+  &:focus {
+    border: 1px solid #292929;
+    outline: none;
   }
 
   &::placeholder {
@@ -18,7 +25,9 @@
     line-height: 20px;
   }
 
-  // &--message {
-
-  // }
+  &--message {
+    height: 148px;
+    font-family: inherit;
+    resize: none;
+  }
 }
